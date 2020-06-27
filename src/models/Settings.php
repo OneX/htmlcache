@@ -23,7 +23,7 @@ class Settings extends \craft\base\Model
 
     public function rules() {
         return [
-            [ ['enableGeneral', 'forceOn', 'optimizeContent', 'purgeCache' ], 'boolean' ],
+            [ ['enableGeneral', 'forceOn', 'optimizeContent', 'purgeCache', 'disablePreviewCache' ], 'boolean' ],
             [ ['cacheDuration' ], 'integer' ],
         ];
     }
